@@ -1,0 +1,48 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+#section {
+    
+    flex-direction: column;
+  
+}
+#home{
+    height:346px;
+}
+/* .client {
+    flex-direction: column;
+} */
+#navbar ul li {
+
+    padding: 17px;
+    margin: 0px;
+}
+
+/* width: 45%; */
+.item img {
+    width: 98px;
+    height: 39px;
+    border-radius: 8px;
+    margin: 2px 2px 2px 2px;
+    padding: 2px;
+
+}
+#client-section {
+    height: 441px;
+}
+
+    #client{
+        flex-wrap: wrap;
+    }
+    
+    .h-primary {
+        font-family: 'Bree Serif', serif;
+        font-size: 1.8rem;
+        padding: 1px;
+        text-align: center;
+    
+    }
+#home p{
+    font-size: 0.8rem;
+}

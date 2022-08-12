@@ -1,0 +1,193 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+#item {
+    display: flex;
+}
+
+:root {
+    --navbar-height: 65px;
+}
+
+#navbar {
+    display: flex;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#logo img {
+    width: 57px;
+    height: 62px;
+    border-radius: 17px;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: auto;
+    width: 62%;
+}
+
+#navbar ul li {
+
+    padding: 30px;
+    margin: 2px;
+}
+
+#navbar::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: aqua;
+    height: var(--navbar-height);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 280px;
+    align-items: center;
+    color: white;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('img/marten-bjork-n_IKQDCyrG0-unsplash.jpg') no-repeat center center/cover;
+    height: 350px;
+    top: 65px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#section {
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    margin: 73px;
+    background-image: url('img/download.jfif') no-repeat center center/cover;
+    opacity: 0.89;
+    z-index: -1;
+}
+#btn{
+    background-color: aqua;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+.box img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 3px solid red;
+    margin: 10px;
+    padding: 3px;
+}
+
+.section h1 {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+
+}
+
+.center {
+    text-align: center;
+}
+
+.client {
+    display: flex;
+    flex-direction: row;
+}
+
+.item img {
+    width: 181px;
+    height: 150px;
+    border-radius: 16px;
+    margin: 2px 2px 2px 2px;
+
+    padding: 55px;
+
+}
+
+#client-section {
+    height: 385px;
+
+}
+
+#client-section::before {
+    position: absolute;
+    content: "";
+    height: 200px;
+    background: url('img/food.jpeg') no-repeat center center/cover;
+    opacity: 0.5;
+    z-index: -1;
+    width: 100%;
+
+    height: 60%;
+}
+#contact{
+    position: relative;
+}
+#contactus {
+
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1px 2px 20px 2px;
+    margin: 74px;
+  
+
+}
+#contactus form{
+    width:40%;
+}
+#contactus input{
+    width:100%;
+}
+#contactus::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('img/contact.webp') no-repeat center center/cover;
+
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+.form-group{
+    padding: 17px;
+    margin: 2px;
+    font-size: 20px;
+    color: blue;
+    font-weight: 400;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 100%;
+}

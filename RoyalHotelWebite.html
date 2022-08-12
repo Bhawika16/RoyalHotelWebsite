@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Meal</title>
+    <link rel="stylesheet" href="RoyalHotelWebite.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <script src="navbar.js"> </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/hotellogo.jpg" alt="Online meal">
+        </div>
+        <ul>
+            <li class="item">Home</li>
+            <li class="item">About Us</li>
+            <li class="item" href="#client-section">Services</li>
+            <li class="item">Contact Us</li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary" id="para">Welcome to MyOnlineMeal</h1>
+
+        <p id="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        <button id="btn" onclick="toggleHide()">Order Now</button>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="section">
+            <div class="box">
+                <img src="img/food.jpeg" alt="">
+
+            </div>
+
+            <div class="box">
+                <img src="img/rooms.jfif" alt="">
+
+            </div>
+
+            <div class="box">
+                <img src="img/francesca-saraco-_dS27XGgRyQ-unsplash.jpg" alt="">
+
+            </div>
+
+            <div class="box">
+                <img src="C:/Users/tejas/Desktop/Project/img/happy.jpg" alt="">
+
+            </div>
+        </div>
+        <div id="client-section">
+            <h1 class="h-primary center"> Our Clients</h1>
+            <div class="client">
+                <div class="item">
+                    <img src="img/mcs.jfif" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/pepsi.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/clients.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/amul.jfif" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/brn.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <h1 class="h-primary center">Contact Us</h1>
+            <div id="contactus">
+                <form action="backend.php">
+
+                    <div class="form-group">
+                        Name: <input type="text" name="myName" placeholder="Enter your Name">
+                    </div>
+                    <div class="form-group">
+                        Phone number: <input type="text" name="myphone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        Order: <input type="text" name="myOrder" placeholder="Enter your Order">
+                    </div>
+                    <div class="form-group">
+                        Gender
+                        <lable for="fem">
+                            <select name="car" id="fem">
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                            </select>
+                        </lable>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <footer class="center">
+            Copyright &copy; All Rights Reserved by Bhawika!
+        </footer>
+        <script>
+
+            toggleHide = () => {
+                if (para.style.display != 'none') {
+                    // para.style.display = 'none';
+                    para = document.getElementById('para').innerHTML = '<h3> Please fill the form below to order! </h3>'
+                    btn.style.display = 'none';
+
+                    // console.log(para);
+                }
+            }
+            // let sel = document.querySelector('navbar');
+            // console.log("Selector returns ", sel)
+
+            let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+          para.style.color='red';
+          
+        });
+        para.addEventListener('mouseout', function run(){
+          para.style.color='white';
+          
+        });
+        para.addEventListener('mouseover',function run(){
+para.style.backgroundColor='purple';
+        });
+
+        function message(str){
+            setTimeout(() => {
+                console.log('hi');
+                
+            }, 2);
+        }
+        </script>
+</body>
+
+</html>
